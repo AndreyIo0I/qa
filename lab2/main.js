@@ -3,7 +3,7 @@ const fs = require('fs')
 const process = require('process')
 const url = process.argv[2]
 
-const URL_REGEXP = /https?:\/\/[A-Za-z.\/?=;0-9_&]+|src="[^"]+"|href="[^"]+"/g
+const URL_REGEXP = /href="([^"]+)"/g
 
 http.get(url, (res) => {
 	const {statusCode} = res
@@ -26,8 +26,8 @@ http.get(url, (res) => {
 	res.on('data', chunk => rawData += chunk)
 	res.on('end', () => {
 		let output = ''
-		const array = [...rawData.matchAll(URL_REGEXP)]
-		array.forEach(item => output += item + '\n')
+		const urlsArray = [...rawData.matchAll(URL_REGEXP)]
+		urlsArray.forEach(item => output += item[1] + '\n')
 		fs.writeFileSync('html.txt', rawData)
 		fs.writeFileSync('output.txt', output)
 	})
