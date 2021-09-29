@@ -1,0 +1,10 @@
+{
+  "name": "qa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Andrey Arsbkv <andrbeckov@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.2.4"
+  }
+}
