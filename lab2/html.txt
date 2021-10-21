@@ -1,658 +1,297 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Whitespace - Free Bootstrap 4 Template by Colorlib</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+<!DOCTYPE HTML>
+<HTML manifest="http://www.deadlinkcity.com/missing-html-manifest.txt">
+<HEAD profile="http://www.deadlinkcity.com/missing-head-profile.txt">
+<TITLE>Example Errors - Benchmark Site for Dead Link Checking Tools</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="Dead link check, broken link checker, Example broken links">
+<META NAME="description" CONTENT="An example page with various errors, to show how Dead Link Checker reports on bad links.">
+<META NAME="Author" CONTENT="DLC Websites 1999-2021">
+<META NAME="Copyright" CONTENT="DLC Websites 1999-2021">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<LINK rel='stylesheet' type='text/css' href='/style.css?r=2'>
+<LINK href='/missing-head-link-href.txt'>
 
-    <link rel="stylesheet" href="css/aos.css">
+<LINK rel='stylesheet' type='text/css' href='/examplestyle.css'>
+<STYLE>
+#hback
+{
+	background-color:#f88;
+	background-image:url('images/green.png?r=1');
+	background-repeat:repeat-y;
+}
+#hnoback
+{
+	background-color:#f88;
+	background-image:url('images/nosuchimage.png?r=1');
+	background-repeat:no-repeat;
+}
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+</STYLE>
+</HEAD>
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+<BODY background="images/missing-body-background.jpg">
+<DIV id="page">
 
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Whitespace</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+<DIV id="topbar">
+<DIV id="topbarlogo" onclick="javascript:location='/'"></DIV>
+</DIV>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	        	<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="work.html" class="nav-link">Work</a></li>
-	        	<li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-	        	<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
+<DIV id="maintext">
 
-    <section class="hero-wrap d-flex">
-    	<div class="forth d-flex">
-    		<div class="bg-after d-flex align-self-stretch"></div>
-    		<div class="text">
-    			<div class="desc pt-5">
-	    			<span class="subheading">Welcome</span>
-	    			<h1 class="mb-3">We Help to Build You the Product</h1>
-	    			<h2 class="mb-4">Business Solution</h2>
-	    			<p><a href="#" class="btn-custom py-3 pr-2">Get in touch</a></p>
-    			</div>
-    		</div>
-    	</div>
-    	<div class="third about-img">
-    		<div id="home" class="video-hero" style="height: 750px; background-image: url(images/bg_1.jpg); background-size:cover; background-position: center center;">
-					<a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=iia8HIsvqmw&list=PLKTlP51GPmJz_ej9d_4OUAh65PMS8jn2n&index=4',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>
-				</div>
-    	</div>
-    </section>
+<H1>Dead Link City - The Museum of Dead Links</H1>
+<P>
 
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
-			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center order-md-last" style="background-image: url(images/about.jpg);">
-					</div>
-					<div class="col-md-7 wrap-about pt-md-5 ftco-animate">
-	          <div class="heading-section mb-5 pt-5 pl-md-5">
-	          	<div class="pr-md-5 mr-md-5 text-md-right">
-	          		<span class="subheading">Providing</span>
-		            <h2 class="mb-4">What We Can Do for You</h2>
-	            </div>
-	          </div>
-	          <div class="pr-md-3 pr-lg-5 pl-md-5 mr-md-5 mb-5">
-	            <div class="services-wrap d-flex">
-	              <div class="icon d-flex justify-content-center align-items-center">
-	            		<span class="flaticon-innovation"></span>
-	              </div>
-	              <div class="media-body pl-md-0 pl-4 pr-4 order-md-first text-md-right">
-	                <h3 class="heading">Market Research</h3>
-	                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-	              </div>
-	            </div>
-	            <div class="services-wrap d-flex">
-	              <div class="icon d-flex justify-content-center align-items-center">
-	            		<span class="flaticon-innovation"></span>
-	              </div>
-	              <div class="media-body pl-md-0 pl-4 pr-4 order-md-first text-md-right">
-	                <h3 class="heading">Financial Services</h3>
-	                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-	              </div>
-	            </div>
-	            <div class="services-wrap d-flex">
-	              <div class="icon d-flex justify-content-center align-items-center">
-	            		<span class="flaticon-innovation"></span>
-	              </div>
-	              <div class="media-body pl-md-0 pl-4 pr-4 order-md-first text-md-right">
-	                <h3 class="heading">Online Marketing</h3>
-	                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-	              </div>
-	            </div>
-	            <div class="services-wrap d-flex">
-	              <div class="icon d-flex justify-content-center align-items-center">
-	            		<span class="flaticon-innovation"></span>
-	              </div>
-	              <div class="media-body pl-md-0 pl-4 pr-4 order-md-first text-md-right">
-	                <h3 class="heading">24/7 Support</h3>
-	                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-	              </div>
-	            </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section class="ftco-section ftco-services">
-			<div class="container">
-				<div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
-            		<span class="flaticon-ideas"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Business Strategy</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
-            		<span class="flaticon-analysis"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Data Analysis</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>    
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
-            		<span class="flaticon-web-design"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Graphic Design</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
-            		<span class="flaticon-idea"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Creative</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-        </div>
-			</div>
-		</section>
+74 different broken links feature on this page. Enter "www.DeadLinkCity.com" in your link checking
+tool to scan this website.<BR>&nbsp;<BR>
+The perfect score is 74 - the closer the result is to 74, the more accurate the tool is.<BR>&nbsp;<BR>
+<B>
+Which is the best Broken Link Checker? See the <A href="/comparison.asp">Comparison Table.</A>
+</B> Scans performed in May 2016.
+</P>
+<P>This website contains <B>74</B> intentionally bad HTML links, in order to verify that they are detected by various
+link-checking tools. The errors fall into a few broad categories:
+</P>
+<UL>
+<LI>36 Simple HTML error status codes 4xx or 5xx</LI>
+<LI>3 HTML &lt;A&gt; links to non-existent pages or domains.</LI>
+<LI>1 HTML &lt;A&gt; link to a non-existent page which is denied to robots.</LI>
+<LI>4 HTML &lt;A&gt; links which redirect in various ways to a non-existent page.</LI>
+<LI>3 missing CSS background images - declared in inline style, external css file, and &lt;style&gt; element respectively.</LI>
+<LI>27 missing files referenced by HTML elements other than &lt;A&gt; - for example &lt;ins cite="missing.html"&gt;No cite&lt;/ins&gt;</LI>
+<BR>
+<LI>There is one bad link (to 'disallowed/disallowed.html') which is 'disallowed' in the robots.txt file. Scanners which respect robots.txt should not report this link</LI>
+</UL>
+
+<P>
+See <a href="errorlist.asp">here</a> for a list of the bad links on this page.
+</P>
+
+<DIV style="float:left;">
+<UL>
+
+<LI><A href="error-page.asp?e=400">Errorcode 400</A> - Bad Request</LI>
+
+<LI><A href="error-page.asp?e=401">Errorcode 401</A> - Unauthorized</LI>
+
+<LI><A href="error-page.asp?e=402">Errorcode 402</A> - Payment Required</LI>
+
+<LI><A href="error-page.asp?e=403">Errorcode 403</A> - Forbidden</LI>
+
+<LI><A href="error-page.asp?e=404">Errorcode 404</A> - Not Found</LI>
+
+<LI><A href="error-page.asp?e=405">Errorcode 405</A> - Method Not Allowed</LI>
+
+<LI><A href="error-page.asp?e=406">Errorcode 406</A> - Not Acceptable</LI>
+
+<LI><A href="error-page.asp?e=407">Errorcode 407</A> - Proxy Authentication Required</LI>
+
+<LI><A href="error-page.asp?e=408">Errorcode 408</A> - Request Timeout</LI>
+
+<LI><A href="error-page.asp?e=409">Errorcode 409</A> - Conflict</LI>
+
+<LI><A href="error-page.asp?e=410">Errorcode 410</A> - Gone</LI>
+
+<LI><A href="error-page.asp?e=411">Errorcode 411</A> - Length Required</LI>
+
+<LI><A href="error-page.asp?e=412">Errorcode 412</A> - Precondition Failed</LI>
+
+<LI><A href="error-page.asp?e=413">Errorcode 413</A> - Request Entity Too Large</LI>
+
+<LI><A href="error-page.asp?e=414">Errorcode 414</A> - Request-URI Too Long</LI>
+
+<LI><A href="error-page.asp?e=415">Errorcode 415</A> - Unsupported Media Type</LI>
+
+<LI><A href="error-page.asp?e=416">Errorcode 416</A> - Requested Range Not Satisfiable</LI>
+
+<LI><A href="error-page.asp?e=417">Errorcode 417</A> - Expectation Failed</LI>
+
+<LI><A href="error-page.asp?e=420">Errorcode 420</A> - Enhance Your Calm</LI>
+
+<LI><A href="error-page.asp?e=422">Errorcode 422</A> - Unprocessable Entity</LI>
+
+<LI><A href="error-page.asp?e=423">Errorcode 423</A> - Locked</LI>
+
+<LI><A href="error-page.asp?e=424">Errorcode 424</A> - Failed Dependency</LI>
+
+<LI><A href="error-page.asp?e=429">Errorcode 429</A> - Too Many Requests</LI>
+
+<LI><A href="error-page.asp?e=431">Errorcode 431</A> - Request Header Fields Too Large</LI>
+
+<LI><A href="error-page.asp?e=450">Errorcode 450</A> - Blocked by Windows Parental Controls</LI>
+
+<LI><A href="error-page.asp?e=500">Errorcode 500</A> - Internal Server Error</LI>
+
+<LI><A href="error-page.asp?e=501">Errorcode 501</A> - Not Implemented</LI>
+
+<LI><A href="error-page.asp?e=502">Errorcode 502</A> - Bad Gateway</LI>
+
+<LI><A href="error-page.asp?e=503">Errorcode 503</A> - Service Unavailable</LI>
+
+<LI><A href="error-page.asp?e=504">Errorcode 504</A> - Gateway Timeout</LI>
+
+<LI><A href="error-page.asp?e=505">Errorcode 505</A> - HTTP Version Not Supported</LI>
+
+<LI><A href="error-page.asp?e=506">Errorcode 506</A> - Variant Also Negotiates</LI>
+
+<LI><A href="error-page.asp?e=507">Errorcode 507</A> - Insufficient Storage</LI>
+
+<LI><A href="error-page.asp?e=509">Errorcode 509</A> - Bandwidth Limit Exceeded</LI>
+
+<LI><A href="error-page.asp?e=510">Errorcode 510</A> - Not Extended</LI>
+
+</UL>
+</DIV>
+<DIV style="float:left;">
+<UL>
+<LI><A href="http://www.deadlinkcity.com/page-not-found.asp">Non-existent page link to http://www.deadlinkcity.com/page-not-found.asp</A></LI>
+<LI><A href="http://www.domaindoesnot.exist">Non-existent domain link to http://www.domaindoesnot.exist</A></LI>
+<LI><A href="default.asp?r=1">301 redirection to a valid link on this site</A></LI>
+<LI><A href="default.asp?r=2">302 redirection to a valid link on this site</A></LI>
+<LI><A href="default.asp?r=4">301 redirection to an invalid link</A></LI>
+<LI><A href="default.asp?r=5">302 redirection to an invalid link</A></LI>
+<LI><A href="default.asp?r=6">Double 301 redirection to an invalid link</A></LI>
+<LI><A href="default.asp?r=7">Double 302 redirection to an invalid link</A></LI>
+<LI><A href="disallowed/disallowed.html">Missing, disallowed by robots.txt</A></LI>
+<LI><A href="disallowed/nonexistent.html">Missing, allowed by robots.txt</A></LI>
+<LI><DIV style="background-color:#f88; background-image:url('images/green.png?r=0'); background-repeat:repeat-y;">Inline Style, background image exists</DIV></LI>
+<LI><DIV style="background-color:#f88; background-image:url('images/nosuchimage.png?r=0'); background-repeat:repeat-y;">Inline Style, background image missing</DIV></LI>
+<LI><DIV id="hback">HTML Style element, background image exists</DIV></LI>
+<LI><DIV id="hnoback">HTML Style element, background image missing</DIV></LI>
+<LI><DIV id="exback">External Style element, background image exists</DIV></LI>
+<LI><DIV id="exnoback">External Style element, background image missing</DIV></LI>
+</UL>
+</DIV>
+
+<DIV style="clear:both;"></DIV>
 
 
-		<section class="ftco-section ftco-counter" id="section-counter" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
-    	<div class="container">
-    		<div class="row d-md-flex align-items-center">
-    			<div class="col-lg-4">
-    				<div class="heading-section pl-md-5 heading-section-white">
-	          	<div class="ftco-animate">
-		          	<span class="subheading">Some</span>
-		            <h2 class="mb-4">Interesting Facts</h2>
-	            </div>
-	          </div>
-    			</div>
-    			<div class="col-lg-8">
-    				<div class="row d-md-flex align-items-center">
-		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 text-center">
-		              <div class="text">
-		                <strong class="number" data-number="2000">0</strong>
-		                <span>Done Works</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 text-center">
-		              <div class="text">
-		                <strong class="number" data-number="300">0</strong>
-		                <span>Happy Customers</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 text-center">
-		              <div class="text">
-		                <strong class="number" data-number="100">0</strong>
-		                <span>Coffee</span>
-		              </div>
-		            </div>
-		          </div>
-		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-		            <div class="block-18 text-center">
-		              <div class="text">
-		                <strong class="number" data-number="1000">0</strong>
-		                <span>Work Hours</span>
-		              </div>
-		            </div>
-		          </div>
-	          </div>
-          </div>
-        </div>
-    	</div>
-    </section>
+<DIV>
+
+<P>Test references within HTML tags.<BR>Note that some of these tags may not be displayed by all browsers, but the references will still be checked.</P>
+<DIV style="float:left;">
+<UL>
+<LI>Area/href:<BR>
+	<IMG src="images/area-test.jpg" width="100" height="100" usemap="#areatest" title="area test">
+	<map name="areatest">
+	 <area shape="circle" coords="50,50,25" href="http://www.deadlinkcity.com/missing-area-test.asp" title="this is a missing link">
+	</map>
+</LI>
+<LI>Audio/src, Source/src:<BR>
+	<audio controls style="width:200px;" src="missing-audio-src.mp3">
+	  <source src="missing-sound.mp3" type="audio/mpeg">
+	  Your browser does not support the audio tag.
+	</audio>
+</LI>
+<LI>Blockquote/cite<BR>
+	<blockquote cite="http://www.deadlinkcity.com/missing-blockquote-cite.html">
+	This quote has an invalid 'cite' attribute.
+	</blockquote>
+</LI>
+<LI>Button/formaction:<BR>
+	<BUTTON formaction="http://www.deadlinkcity.com/missing-button-formaction.asp">missing formaction</BUTTON>
+</LI>
+<LI>Command/icon:<BR>
+	<MENU><COMMAND icon="http://www.deadlinkcity.com/images/missing-command-icon.jpg">missing icon</COMMAND></MENU>
+</LI>
+<LI>Del/cite:<BR>
+	<del cite="http://www.deadlinkcity.com/missing-del-cite.html">
+	This deleted text has an invalid 'cite' attribute.
+	</del>
+</LI>
+<LI>Embed/src:<BR>
+	<EMBED src="http://www.deadlinkcity.com/missing-embed-src.swf" width="100" height="50" />
+</LI>
+<LI>Form/action:<BR>
+	<FORM action="http://www.deadlinkcity.com/missing-form-action.asp" method="post">
+	<INPUT type="submit" value="Form with invalid 'action'">
+	</FORM>
+</LI>
+</UL>
+</DIV>
+<DIV style="float:left;">
+<UL>
+<LI>Frame/src, Frame/longdesc:<BR>
+	<frameset cols="100%">Frame with invalid src and longdesc
+	 <frame src="http://www.deadlinkcity.com/missing-frame-src.html" longdesc="http://www.deadlinkcity.com/missing-frame-longdesc.html">
+	</frameset>
+</LI>
+<LI>Head/profile:<BR>
+	This page's 'head' tag has an invalid 'profile' attribute
+</LI>
+<LI>HTML/manifest:<BR>
+	This page's 'HTML' tag has an invalid 'manifest' attribute
+</LI>
+<LI>Iframe/src, IFrame/longdesc:<BR>
+	<IFRAME height="40" width="100" src="http://www.deadlinkcity.com/missing-iframe-src.html"
+	longdesc="http://www.deadlinkcity.com/missing-iframe-longdesc.txt"></IFRAME>
+</LI>
+<LI>Img/src, Img/longdesc:<BR>
+	<img src="http://www.deadlinkcity.com/images/missing-img-src.jpg" longdesc="http://www.deadlinkcity.com/missing-img-longdesc.html" width="25" height="15">missing image
+</LI>
+<LI>Input/src, Input/formaction:<BR>
+	<form>
+	 <input type="image" src="http://www.deadlinkcity.com/images/missing-input-src.jpg" formaction="http://www.deadlinkcity.com/missing-input-formaction.html">
+	</form>
+</LI>
+<LI>Ins/cite:<BR>
+	<ins cite="http://www.deadlinkcity.com/missing-ins-cite.html">
+	This inserted text has an invalid 'cite' attribute.
+	</ins>
+</LI>
+<LI>Link/href:<BR>
+	This page's 'head' has a 'link' tag with an<BR>invalid 'href' attribute
+</LI>
+<LI>Object/classid, object/codebase, object/data:<BR>
+	<object width="200" height="20" classid="http://www.deadlinkcity.com/missing-object-classid.html" codebase="http://www.deadlinkcity.com/missing-object-codebase.html" data="http://www.deadlinkcity.com/missing-object-data.swf">missing classid, codebase, data</object>
+</LI>
+<LI>Q/cite:<BR>
+	<q cite="http://www.deadlinkcity.com/missing-q-cite.html">
+	This quotation has an invalid 'cite' attribute.
+	</q>
+</LI>
+<LI>Script/src:<BR>
+	missing script<SCRIPT src="http://www.deadlinkcity.com/missing-script-src.js"></SCRIPT>
+</LI>
+<LI>Video/poster, Video/src:<BR>
+	<video controls width="200" height="40" src="http://www.deadlinkcity.com/missing-video-src.mp4" poster="http://www.deadlinkcity.com/images/missing-video-poster.jpg">
+	 missing src and poster
+	</video>
+</LI>
+
+</UL>
+</DIV>
+<DIV style="clear:both"></DIV>
+</DIV>
+
+</DIV>
+
+<DIV id="copyright" style="clear:both;">
+<DIV class="address">&copy;&nbsp;2021 DLC&nbsp;Websites -
+also published by DLC Websites: www.deadlinkchecker.com -
+<A href="" id="ml2">email us</A></DIV>
+</DIV>
+
+<SCRIPT TYPE="text/JavaScript">
+<!--
+function obj(name)
+{
+	var o=null;
+	if(document.getElementById)
+		o=document.getElementById(name);
+	else if(document.all)
+		o=document.all.item(name);
+	else if(document.layers)
+		o=document.layers[name];
+	return o;
+}
+var m="sendto:info-_-deadlinkcheckerk0m?subject=DeadLinkCityk0m - feedback";
+var ml2=obj("ml2");
+if (ml2) ml2.href=m.replace(/k0m/g,"."+"com").replace(/-_-/g,"@").replace(/send/g,"mail");
+-->
+</SCRIPT>
 
 
-    <section class="ftco-section ftco-project" id="projects-section">
-    	<div class="container-fluid px-4">
-    		<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-lg-6 heading-section text-center ftco-animate">
-          	<span class="subheading">Projects</span>
-            <h2 class="mb-4">Recents Projects</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);">
-    					<div class="overlay"></div>
-    					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-  				</div>
-  				<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-5.jpg);">
-    					<div class="overlay"></div>
-    					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="../links/502gateaway502.php">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-  				</div>
-
-    			<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-1.jpg);">
-    					<div class="overlay"></div>
-    					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);">
-    					<div class="overlay"></div>
-    					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="row">
-    					<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-2.jpg);">
-		    					<div class="overlay"></div>
-		    					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
-			    				<div class="text text-center p-4">
-			    					<h3><a href="../links/access401unauthorized.php">Branding &amp; Illustration Design</a></h3>
-			    					<span>Web Design</span>
-			    				</div>
-		    				</div>
-	    				</div>
-	    				<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-3.jpg);">
-		    					<div class="overlay"></div>
-		    					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
-			    				<div class="text text-center p-4">
-			    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-			    					<span>Web Design</span>
-			    				</div>
-		    				</div>
-	    				</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-    <section class="ftco-section testimony-section ftco-no-pt">
-      <div class="container-fluid px-4">
-        <div class="row ftco-animate">
-          <div class="col-md-12 testimony-top">
-            <div class="carousel-testimony owl-carousel">
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5 text-center">
-                  <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">Marketing Manager</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5 text-center">
-                  <div class="user-img mb-5" style="background-image: url(images/person_2.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">Interface Designer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5 text-center">
-                  <div class="user-img mb-5" style="background-image: url(images/person_3.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">UI Designer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5 text-center">
-                  <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">Web Developer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5 text-center">
-                  <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">System Analyst</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-12 heading-section ftco-animate text-center">
-          	<span class="subheading">Testimony</span>
-            <h2 class="mb-4">My satisfied customer says</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-		<section class="ftco-section">
-			<div class="container">
-				<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate text-center">
-          	<span class="subheading">Our latest update</span>
-            <h2 class="mb-4">Case Study</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-          </div>
-        </div>	
-				<div class="row">
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-              </a>
-              <div class="text py-4">
-                <div class="meta mb-3">
-                  <div><a href="#">Oct. 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <div class="desc">
-	                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-	              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry" data-aos-delay="100">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-              </a>
-              <div class="text py-4">
-                <div class="meta mb-3">
-                  <div><a href="#">Oct. 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <div class="desc">
-	                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-	              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry" data-aos-delay="200">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-              </a>
-              <div class="text py-4">
-                <div class="meta mb-3">
-                  <div><a href="#">Oct. 12, 2018</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <div class="desc">
-	                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-	              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-			</div>
-		</section>
-
-		<section class="ftco-section bg-light">
-    	<div class="container">
-    		<div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-          	<span class="subheading">Pricing Plans</span>
-            <h2 class="mb-3">Our Best Pricing</h2>
-          </div>
-        </div>
-    		<div class="row">
-	        <div class="col-md-6 col-lg-3 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-	            <h2 class="heading">Free</h2>
-	            <span class="price"><sup>$</sup> <span class="number">0</span></span>
-	            <span class="excerpt d-block">100% free. Forever</span>
-	            <a href="#" class="btn btn-primary d-block px-2 py-3 mb-4">Get Started</a>
-	            
-	            <h3 class="heading-2 mb-4">Enjoy All The Features</h3>
-	            
-	            <ul class="pricing-text">
-	              <li><strong>150 GB</strong> Bandwidth</li>
-	              <li><strong>100 GB</strong> Storage</li>
-	              <li><strong>$1.00 / GB</strong> Overages</li>
-	              <li>All features</li>
-	            </ul>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-md-6 col-lg-3 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-	            <h2 class="heading">Startup</h2>
-	            <span class="price"><sup>$</sup> <span class="number">19</span></span>
-	            <span class="excerpt d-block">All features are included</span>
-	            <a href="#" class="btn btn-primary btn-outline-primary d-block px-3 py-3 mb-4">Get Started</a>
-	            
-	            <h3 class="heading-2 mb-4">Enjoy All The Features</h3>
-	            
-	            <ul class="pricing-text">
-	              <li><strong>450 GB</strong> Bandwidth</li>
-	              <li><strong>400 GB</strong> Storage</li>
-	              <li><strong>$2.00 / GB</strong> Overages</li>
-	              <li>All features</li>
-	            </ul>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-md-6 col-lg-3 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-	            <h2 class="heading">Premium</h2>
-	            <span class="price"><sup>$</sup> <span class="number">49</span></span>
-	            <span class="excerpt d-block">All features are included</span>
-	            <a href="#" class="btn btn-primary btn-outline-primary d-block px-3 py-3 mb-4">Get Started</a>
-	            
-	            <h3 class="heading-2 mb-4">Enjoy All The Features</h3>
-	            
-	            <ul class="pricing-text">
-	              <li><strong>250 GB</strong> Bandwidth</li>
-	              <li><strong>200 GB</strong> Storage</li>
-	              <li><strong>$5.00 / GB</strong> Overages</li>
-	              <li>All features</li>
-	            </ul>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-md-6 col-lg-3 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-	            <h2 class="heading">Pro</h2>
-	            <span class="price"><sup>$</sup> <span class="number">99</span></span>
-	            <span class="excerpt d-block">All features are included</span>
-	            <a href="#" class="btn btn-primary btn-outline-primary d-block px-3 py-3 mb-4">Get Started</a>
-	            
-	            <h3 class="heading-2 mb-4">Enjoy All The Features</h3>
-	            
-	            <ul class="pricing-text">
-	              <li><strong>450 GB</strong> Bandwidth</li>
-	              <li><strong>400 GB</strong> Storage</li>
-	              <li><strong>$20.00 / GB</strong> Overages</li>
-	              <li>All features</li>
-	            </ul>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	      <div class="row  mt-5 justify-conten-center">
-        	<div class="col-md-8 ftco-animate">
-        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vero accusantium sunt sit aliquam ipsum molestias autem perferendis, incidunt cumque necessitatibus cum amet cupiditate, ut accusamus. Animi, quo. Laboriosam, laborum.</p>
-        	</div>
-        </div>
-    	</div>
-    </section>
-
-		<section class="ftco-section ftco-partner">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-1.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-2.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-3.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-4.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-5.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-5 d-flex">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Whitespace</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Usefull Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Quick Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Practice Areas</a></li>
-                <li><a href="#">Appointment</a></li>
-                <li><a href="../links/deny403forbidden.php">Terms &amp; Conditions</a></li>
-                <li><a href="#">FAQ</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/jquery.mb.YTPlayer.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-    
-  </body>
-</html>
+</DIV>
+</BODY>
+</HTML>
