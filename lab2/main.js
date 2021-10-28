@@ -11,47 +11,6 @@ const parsedUrls = new Map()
 
 main()
 
-function analyzeUrl(url) {
-	return new Promise(resolve => {
-		if (parsedUrls.has(url)) {
-			return
-		}
-		const http = url.startsWith('https') ? require('https') : require('http')
-		http.get(url, (res) => {
-			const {statusCode} = res
-			const contentType = res.headers['content-type']
-
-			parsedUrls.set(url, statusCode)
-
-			if (!(statusCode === 200 && contentType && contentType.includes('text/html'))) {
-				res.resume()
-				--f
-				return
-			}
-
-			res.setEncoding('utf8')
-			let rawData = ''
-			res.on('data', chunk => rawData += chunk)
-			res.on('end', () => {
-				const urlsArray = [...rawData.matchAll(URL_REGEXP)]
-				urlsArray.forEach(item => {
-					item = item[1]
-					if (item.startsWith('http://') || item.startsWith('https://')) {
-						analyzeUrl(item)
-					}
-					else if (item[0] === '/') {
-						analyzeUrl(urlBase + '/' + item)
-					}
-					else {
-						analyzeUrl(urlBase + '//' + item)
-					}
-				})
-			})
-		})
-		.on('error', () => {})
-	})
-}
-
 async function main() {
 	await analyzeUrl(process.argv[2])
 
@@ -75,4 +34,57 @@ async function main() {
 	bad += `${badCount}\n${new Date(Date.now()).toLocaleString('ru-RU')}\n`
 	fs.writeFileSync('ok.txt', ok)
 	fs.writeFileSync('bad.txt', bad)
+}
+
+async function analyzeUrl(url) {
+	return new Promise(async resolve => {
+		if (parsedUrls.has(url)) {
+			resolve()
+			return
+		}
+		const rawData = await makeRequest(url) || ''
+		const urlsArray = [...rawData.matchAll(URL_REGEXP)]
+		for (let item of urlsArray) {
+			item = item[1]
+			if (item.startsWith('http://') || item.startsWith('https://')) {
+				await analyzeUrl(item)
+			}
+			else if (item[0] === '/') {
+				await analyzeUrl(urlBase + '/' + item)
+			}
+			else {
+				await analyzeUrl(urlBase + '//' + item)
+			}
+		}
+		resolve()
+	})
+}
+
+function makeRequest(url) {
+	return new Promise(resolve => {
+		const http = url.startsWith('https') ? require('https') : require('http')
+		try {
+			http.get(url, (res) => {
+				const {statusCode} = res
+				const contentType = res.headers['content-type']
+
+				parsedUrls.set(url, statusCode)
+
+				if (!(statusCode === 200 && contentType && contentType.includes('text/html'))) {
+					res.resume()
+					resolve()
+					return
+				}
+
+				res.setEncoding('utf8')
+				let rawData = ''
+				res.on('data', chunk => rawData += chunk)
+				res.on('end', () => resolve(rawData))
+			})
+				.on('error', () => resolve())
+		}
+		catch {
+			console.warn('Not url: ', url)
+		}
+	})
 }

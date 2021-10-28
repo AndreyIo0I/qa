@@ -1,2 +1,7 @@
-0
-21.10.2021, 11:30:34
+200 http://www.DeadLinkCity.com
+200 http://www.deadlinkcity.com//comparison.asp
+200 http://www.deadlinkcity.com//
+200 http://www.deadlinkcity.com//errorlist.asp
+200 http://www.deadlinkcity.com//images/area-test.jpg
+5
+28.10.2021, 10:53:31
