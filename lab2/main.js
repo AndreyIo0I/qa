@@ -44,23 +44,21 @@ async function analyzeUrl(url) {
 		}
 		const rawData = await makeRequest(url) || ''
 		const urlsArray = [...rawData.matchAll(URL_REGEXP)]
-		for (let item of urlsArray) {
-			item = item[1]
-			if (item.startsWith('http://') || item.startsWith('https://')) {
-				await analyzeUrl(item)
+		Promise.all(urlsArray.map(item => {
+			let newUrl = item[1]
+			if (newUrl[0] === '/') {
+				newUrl = urlBase + newUrl
 			}
-			else if (item[0] === '/') {
-				await analyzeUrl(urlBase + '/' + item)
+			else if (!newUrl.startsWith('http://') && !newUrl.startsWith('https://')) {
+				newUrl = urlBase + '/' + newUrl
 			}
-			else {
-				await analyzeUrl(urlBase + '//' + item)
-			}
-		}
-		resolve()
+			return analyzeUrl(newUrl)
+		})).finally(() => resolve())
 	})
 }
 
 function makeRequest(url) {
+	analyzedUrls.set(url, -1)
 	return new Promise(resolve => {
 		const http = url.startsWith('https') ? require('https') : require('http')
 		try {
@@ -70,20 +68,23 @@ function makeRequest(url) {
 
 				analyzedUrls.set(url, statusCode)
 
-				if (!(statusCode === 200 && contentType && contentType.includes('text/html'))) {
+				if (statusCode === 200
+					&& contentType && contentType.includes('text/html')
+					&& host === urlApi.parse(url).host
+				) {
+					console.log(url, analyzedUrls.size)
+					res.setEncoding('utf8')
+					let rawData = ''
+					res.on('data', chunk => rawData += chunk)
+					res.on('end', () => resolve(rawData))
+				}
+				else {
 					res.resume()
 					resolve()
-					return
 				}
-
-				res.setEncoding('utf8')
-				let rawData = ''
-				res.on('data', chunk => rawData += chunk)
-				res.on('end', () => resolve(rawData))
 			})
 				.on('error', () => resolve())
-		}
-		catch {
+		} catch {
 			console.warn('Not url: ', url)
 		}
 	})

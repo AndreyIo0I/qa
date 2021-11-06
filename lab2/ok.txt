@@ -1,7 +1,10 @@
-200 http://www.DeadLinkCity.com
-200 http://www.deadlinkcity.com//comparison.asp
-200 http://www.deadlinkcity.com//
-200 http://www.deadlinkcity.com//errorlist.asp
-200 http://www.deadlinkcity.com//images/area-test.jpg
-5
-28.10.2021, 10:53:31
+200 http://91.210.252.240/broken-links/
+200 https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900
+200 http://91.210.252.240/#
+200 https://colorlib.com
+200 https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false
+200 http://91.210.252.240/shop/
+200 http://91.210.252.240/shopapi/
+200 http://91.210.252.240/
+8
+06.11.2021, 17:48:28
