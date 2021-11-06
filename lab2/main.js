@@ -7,7 +7,7 @@ const parsedUrl = urlApi.parse(process.argv[2])
 const host = parsedUrl.host
 const urlBase = parsedUrl.protocol + '//' + host
 
-const parsedUrls = new Map()
+const analyzedUrls = new Map()
 
 main()
 
@@ -19,7 +19,7 @@ async function main() {
 	let bad = ''
 	let badCount = 0
 
-	parsedUrls.forEach((status, url) => {
+	analyzedUrls.forEach((status, url) => {
 		if ([200].includes(status)) {
 			ok += status + ' ' + url + '\n'
 			++okCount
@@ -38,7 +38,7 @@ async function main() {
 
 async function analyzeUrl(url) {
 	return new Promise(async resolve => {
-		if (parsedUrls.has(url)) {
+		if (analyzedUrls.has(url)) {
 			resolve()
 			return
 		}
@@ -68,7 +68,7 @@ function makeRequest(url) {
 				const {statusCode} = res
 				const contentType = res.headers['content-type']
 
-				parsedUrls.set(url, statusCode)
+				analyzedUrls.set(url, statusCode)
 
 				if (!(statusCode === 200 && contentType && contentType.includes('text/html'))) {
 					res.resume()
