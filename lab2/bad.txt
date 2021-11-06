@@ -44,9 +44,9 @@
 404 http://91.210.252.240/css/bootstrap.css
 404 http://91.210.252.240/megamenu/css/ionicons.min.css
 404 http://91.210.252.240/megamenu/css/style.css
--1 http://91.210.252.240/css/flexslider.css
+404 http://91.210.252.240/css/flexslider.css
 404 http://91.210.252.240/user/login
--1 http://91.210.252.240/user/signup
+404 http://91.210.252.240/user/signup
 404 http://91.210.252.240/cart/show
 404 http://91.210.252.240/images/cart-1.png
 301 http://91.210.252.240/shopapi
@@ -88,7 +88,7 @@
 404 http://91.210.252.240/cart/add?id=14
 404 http://91.210.252.240/product/chasy-4
 404 http://91.210.252.240/cart/add?id=15
--1 http://91.210.252.240/product/chasy-5
+404 http://91.210.252.240/product/chasy-5
 404 http://91.210.252.240/cart/add?id=16
 404 http://91.210.252.240/account.html
 403 http://91.210.252.240/mailto:example@email.com
@@ -110,4 +110,4 @@
 404 http://91.210.252.240/cart/add?id=2
 404 http://91.210.252.240/product/casio-mrp-700-1avef-3
 111
-06.11.2021, 17:48:28
+06.11.2021, 18:01:41

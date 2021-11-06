@@ -58,7 +58,9 @@ async function analyzeUrl(url) {
 }
 
 function makeRequest(url) {
-	analyzedUrls.set(url, -1)
+	if (!analyzedUrls.has(url)) {
+		analyzedUrls.set(url, -1)
+	}
 	return new Promise(resolve => {
 		const http = url.startsWith('https') ? require('https') : require('http')
 		try {
@@ -83,7 +85,9 @@ function makeRequest(url) {
 					resolve()
 				}
 			})
-				.on('error', () => resolve())
+				.on('error', () => {
+					setTimeout(() => makeRequest(url).finally(() => resolve()), 500)
+				})
 		} catch {
 			console.warn('Not url: ', url)
 		}
