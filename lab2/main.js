@@ -74,7 +74,6 @@ function makeRequest(url) {
 					&& contentType && contentType.includes('text/html')
 					&& host === urlApi.parse(url).host
 				) {
-					console.log(url, analyzedUrls.size)
 					res.setEncoding('utf8')
 					let rawData = ''
 					res.on('data', chunk => rawData += chunk)
@@ -86,7 +85,7 @@ function makeRequest(url) {
 				}
 			})
 				.on('error', () => {
-					setTimeout(() => makeRequest(url).finally(() => resolve()), 500)
+					setTimeout(() => makeRequest(url).finally(() => resolve()), 200)
 				})
 		} catch {
 			console.warn('Not url: ', url)
