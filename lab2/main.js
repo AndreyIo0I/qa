@@ -84,10 +84,20 @@ function makeRequest(url) {
 					resolve()
 				}
 			})
-				.on('error', () => {
-					setTimeout(() => makeRequest(url).finally(() => resolve()), 200)
+				.on('error', (err) => {
+					if (analyzedUrls.get(url) !== -1) {
+						setTimeout(() => {
+							analyzedUrls.set(url, -1)
+							makeRequest(url).finally(() => resolve())
+						}, 200)
+					}
+					else {
+						analyzedUrls.set(url, err.code)
+						resolve()
+					}
 				})
-		} catch {
+		}
+		catch {
 			console.warn('Not url: ', url)
 		}
 	})
