@@ -2,7 +2,7 @@ const fs = require('fs')
 const process = require('process')
 const urlApi = require('url')
 
-const URL_REGEXP = /(?:href|src|cite|formaction|icon|action|manifest|profile|background|longdesc|classid|codebase|data|poster)="([^"]+)"/g
+const URL_REGEXP = /(?:href|src|cite|formaction|icon|action|manifest|profile|background|longdesc|classid|codebase|data|poster)=["']?([^"']+)["']?/g
 const parsedUrl = urlApi.parse(process.argv[2])
 const host = parsedUrl.host
 const urlBase = parsedUrl.protocol + '//' + host
@@ -12,6 +12,7 @@ const analyzedUrls = new Map()
 main()
 
 async function main() {
+	fs.writeFileSync('output.txt', '')
 	await analyzeUrl(process.argv[2])
 
 	let ok = ''
@@ -52,6 +53,7 @@ async function analyzeUrl(url) {
 			else if (!newUrl.startsWith('http://') && !newUrl.startsWith('https://')) {
 				newUrl = urlBase + '/' + newUrl
 			}
+			fs.appendFileSync('output.txt', newUrl + '\n')
 			return analyzeUrl(newUrl)
 		})).finally(() => resolve())
 	})
@@ -71,7 +73,7 @@ function makeRequest(url) {
 				analyzedUrls.set(url, statusCode)
 
 				if (statusCode === 200
-					&& contentType && contentType.includes('text/html')
+					// && contentType && contentType.includes('text/html')
 					&& host === urlApi.parse(url).host
 				) {
 					res.setEncoding('utf8')

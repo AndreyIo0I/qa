@@ -65,10 +65,10 @@ export class Rectangle {
 
 	intersect(rect) {
 		if (!(rect instanceof Rectangle)) {
-			throw Error('invalid rect')
+			throw Error('invalid parameter')
 		}
-		const xIntersection = this.#x + this.#width > rect.getX() && rect.getX() + rect.getWidth() > this.getX()
-		const yIntersection = this.#y + this.#height > rect.getY() && rect.getY() + rect.getHeight() > this.getY()
+		const xIntersection = this.#x + this.#width >= rect.getX() && rect.getX() + rect.getWidth() >= this.getX()
+		const yIntersection = this.#y + this.#height >= rect.getY() && rect.getY() + rect.getHeight() >= this.getY()
 		return xIntersection && yIntersection
 	}
 }
