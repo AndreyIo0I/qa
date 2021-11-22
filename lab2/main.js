@@ -2,7 +2,7 @@ const fs = require('fs')
 const process = require('process')
 const urlApi = require('url')
 
-const URL_REGEXP = /(?:href|src|cite|formaction|icon|action|manifest|profile|background|longdesc|classid|codebase|data|poster)=["']?([^"']+)["']?/g
+const URL_REGEXP = /href="([^#"]+)[#"]/g
 const parsedUrl = urlApi.parse(process.argv[2])
 const host = parsedUrl.host
 const urlBase = parsedUrl.protocol + '//' + host
@@ -21,7 +21,7 @@ async function main() {
 	let badCount = 0
 
 	analyzedUrls.forEach((status, url) => {
-		if ([200].includes(status)) {
+		if (status >= 200 && status < 300) {
 			ok += status + ' ' + url + '\n'
 			++okCount
 		}
@@ -51,7 +51,10 @@ async function analyzeUrl(url) {
 				newUrl = urlBase + newUrl
 			}
 			else if (!newUrl.startsWith('http://') && !newUrl.startsWith('https://')) {
-				newUrl = urlBase + '/' + newUrl
+				if (!url.endsWith('/')) {
+					newUrl = '/' + newUrl
+				}
+				newUrl = url + newUrl
 			}
 			fs.appendFileSync('output.txt', newUrl + '\n')
 			return analyzeUrl(newUrl)
@@ -72,10 +75,7 @@ function makeRequest(url) {
 
 				analyzedUrls.set(url, statusCode)
 
-				if (statusCode === 200
-					// && contentType && contentType.includes('text/html')
-					&& host === urlApi.parse(url).host
-				) {
+				if (host === urlApi.parse(url).host) {
 					res.setEncoding('utf8')
 					let rawData = ''
 					res.on('data', chunk => rawData += chunk)
