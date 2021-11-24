@@ -12,5 +12,8 @@
   },
   "scripts": {
     "test": "jest"
+  },
+  "dependencies": {
+    "mountebank-helper": "^1.2.1"
   }
 }
