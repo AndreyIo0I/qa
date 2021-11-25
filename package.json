@@ -4,6 +4,7 @@
   "main": "index.js",
   "author": "Andrey Arsbkv <andrbeckov@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
@@ -14,6 +15,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "mountebank-helper": "^1.2.1"
+    "mountebank-helper": "^1.2.1",
+    "normalize-url": "^7.0.2"
   }
 }

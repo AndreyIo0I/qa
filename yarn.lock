@@ -3403,7 +3403,7 @@ mountebank-helper@^1.2.1:
     node-fetch "^1.5.3"
     tcp-port-used "^0.1.2"
 
-"mountebank@github:bbyars/mountebank":
+mountebank@bbyars/mountebank:
   version "2.6.0"
   resolved "https://codeload.github.com/bbyars/mountebank/tar.gz/7bc7fd5cd9df3478f6966aa5504d824c647acb0a"
   dependencies:
@@ -3516,6 +3516,11 @@ normalize-path@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
+
+normalize-url@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-7.0.2.tgz#3f250c964484715e6bfbcdfa2524ad76c57e1297"
+  integrity sha512-HC9c6eHqxmiR6sL9DKt9ttLkiLaI1jytdkJMGAEvkLAAdlOi99kR7UMWWWRrwjucuFabaau4ZuvP1Zv+6PpDjA==
 
 npm-run-path@^4.0.1:
   version "4.0.1"

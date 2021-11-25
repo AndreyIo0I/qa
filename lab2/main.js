@@ -1,6 +1,9 @@
-const fs = require('fs')
-const process = require('process')
-const urlApi = require('url')
+import normalizeUrl from 'normalize-url'
+import * as urlApi from 'url'
+import fs from 'fs'
+import * as process from 'process'
+import http from 'http'
+import https from 'https'
 
 const URL_REGEXP = /href="([^#"]+)[#"]/g
 const parsedUrl = urlApi.parse(process.argv[2])
@@ -47,17 +50,18 @@ async function analyzeUrl(url) {
 		const urlsArray = [...rawData.matchAll(URL_REGEXP)]
 		Promise.all(urlsArray.map(item => {
 			let newUrl = item[1]
-			if (newUrl[0] === '/') {
+			if (newUrl.startsWith('/')) {
 				newUrl = urlBase + newUrl
 			}
 			else if (!newUrl.startsWith('http://') && !newUrl.startsWith('https://')) {
 				if (!url.endsWith('/')) {
 					newUrl = '/' + newUrl
 				}
-				newUrl = url + newUrl
+				const normUrl = url.endsWith('.html') ? url.slice(0, url.lastIndexOf('/')) : url
+				newUrl = normUrl + newUrl
 			}
 			fs.appendFileSync('output.txt', newUrl + '\n')
-			return analyzeUrl(newUrl)
+			return analyzeUrl(normalizeUrl(newUrl))
 		})).finally(() => resolve())
 	})
 }
@@ -67,9 +71,9 @@ function makeRequest(url) {
 		analyzedUrls.set(url, -1)
 	}
 	return new Promise(resolve => {
-		const http = url.startsWith('https') ? require('https') : require('http')
+		const httpModule = url.startsWith('https') ? https : http
 		try {
-			http.get(url, (res) => {
+			httpModule.get(url, (res) => {
 				const {statusCode} = res
 				const contentType = res.headers['content-type']
 
