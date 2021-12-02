@@ -15,7 +15,6 @@ const analyzedUrls = new Map()
 main()
 
 async function main() {
-	fs.writeFileSync('output.txt', '')
 	await analyzeUrl(process.argv[2])
 
 	let ok = ''
@@ -60,7 +59,6 @@ async function analyzeUrl(url) {
 				const normUrl = url.endsWith('.html') ? url.slice(0, url.lastIndexOf('/')) : url
 				newUrl = normUrl + newUrl
 			}
-			fs.appendFileSync('output.txt', newUrl + '\n')
 			return analyzeUrl(normalizeUrl(newUrl))
 		})).finally(() => resolve())
 	})

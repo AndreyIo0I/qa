@@ -1,4 +1,4 @@
-const mbHelper = require('mountebank-helper')
+import mbHelper from 'mountebank-helper'
 
 const imposter = new mbHelper.Imposter({
 	'imposterPort': 3000,

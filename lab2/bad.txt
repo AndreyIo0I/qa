@@ -1,0 +1,14 @@
+502 http://91.210.252.240/links/502gateaway502.php
+401 http://91.210.252.240/links/access401unauthorized.php
+403 http://91.210.252.240/links/deny403forbidden.php
+403 http://91.210.252.240/broken-links/tel://1234567920
+403 http://91.210.252.240/broken-links/mailto:info@yoursite.com
+ECONNRESET http://91.210.252.240/links/404not404found404.php
+500 http://91.210.252.240/links/return500bad.php
+500 http://91.210.252.240/links/teapot418.php
+503 http://91.210.252.240/links/un503availible.php
+301 http://91.210.252.240/links/movedper.php
+302 http://91.210.252.240/links/found302.php
+423 http://91.210.252.240/links/locked.php
+12
+02.12.2021, 10:07:43
