@@ -4,29 +4,41 @@ const imposter = new mbHelper.Imposter({
 	'imposterPort': 3000,
 })
 
-const xratesResponse = {
-	'uri': '/xrates',
+const RUBtoAUD = 64.128
+
+// todo rub, usd, eur, invalid, all
+
+const RUBXratesResponse = {
+	'uri': '/xrates/rub',
 	'verb': 'GET',
 	'res': {
 		'statusCode': 200,
 		'responseHeaders': {'Content-Type': 'application/json'},
 		'responseBody': JSON.stringify({
-			'AUD': 53.6970,
-			'AZN': 43.7743,
-			'AMD': 15.5396,
-			'BYN': 29.6175,
-			'BGN': 42.7453,
-			'BRL': 13.3483,
+			'AUD': RUBtoAUD,
 		}),
 	},
 }
 
-imposter.addRoute(xratesResponse)
+const AUDXratesResponse = {
+	'uri': '/xrates/aud',
+	'verb': 'GET',
+	'res': {
+		'statusCode': 200,
+		'responseHeaders': {'Content-Type': 'application/json'},
+		'responseBody': JSON.stringify({
+			'RUB': 1 / RUBtoAUD,
+		}),
+	},
+}
+
+imposter.addRoute(RUBXratesResponse)
+imposter.addRoute(AUDXratesResponse)
 
 mbHelper.startMbServer(2525)
 	.then(function () {
 		imposter.postToMountebank()
 			.then(() => {
-				console.log('Imposter Posted! Go to http://localhost:3000/xrates')
+				console.log('Imposter Posted! Go to http://localhost:3000/xrates/rub, http://localhost:3000/xrates/aud')
 			})
 	})
