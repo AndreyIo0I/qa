@@ -1,10 +1,13 @@
 import mbHelper from 'mountebank-helper'
+import fetch from 'node-fetch'
 
 const imposter = new mbHelper.Imposter({
 	'imposterPort': 3000,
 })
 
-const RUBtoAUD = 64.128
+const RUB = 1
+const EUR = 83.24
+const USD = 73.75
 
 // todo rub, usd, eur, invalid, all
 
@@ -15,25 +18,67 @@ const RUBXratesResponse = {
 		'statusCode': 200,
 		'responseHeaders': {'Content-Type': 'application/json'},
 		'responseBody': JSON.stringify({
-			'AUD': RUBtoAUD,
+			EUR: EUR / RUB,
+			USD: USD / RUB,
 		}),
 	},
 }
 
-const AUDXratesResponse = {
-	'uri': '/xrates/aud',
+const EURXratesResponse = {
+	'uri': '/xrates/eur',
 	'verb': 'GET',
 	'res': {
 		'statusCode': 200,
 		'responseHeaders': {'Content-Type': 'application/json'},
 		'responseBody': JSON.stringify({
-			'RUB': 1 / RUBtoAUD,
+			RUB: RUB / EUR,
+			USD: USD / EUR,
 		}),
 	},
 }
 
+const USDXratesResponse = {
+	'uri': '/xrates/usd',
+	'verb': 'GET',
+	'res': {
+		'statusCode': 200,
+		'responseHeaders': {'Content-Type': 'application/json'},
+		'responseBody': JSON.stringify({
+			RUB: RUB / USD,
+			EUR: EUR / USD,
+		}),
+	},
+}
+
+const AllXratesResponse = {
+	'uri': '/xrates',
+	'verb': 'GET',
+	'res': {
+		'statusCode': 200,
+		'responseHeaders': {'Content-Type': 'application/json'},
+		'responseBody': JSON.stringify({
+			RUB,
+			EUR,
+			USD,
+		}),
+	},
+}
+
+const Response404 = {
+	'uri': '',
+	'verb': 'GET',
+	'res': {
+		'statusCode': 200,
+		'responseHeaders': {'Content-Type': 'text/html'},
+		'responseBody': '404',
+	},
+}
+
 imposter.addRoute(RUBXratesResponse)
-imposter.addRoute(AUDXratesResponse)
+imposter.addRoute(EURXratesResponse)
+imposter.addRoute(USDXratesResponse)
+imposter.addRoute(AllXratesResponse)
+imposter.addRoute(Response404)
 
 mbHelper.startMbServer(2525)
 	.then(function () {
