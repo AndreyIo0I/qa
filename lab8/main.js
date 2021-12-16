@@ -1,5 +1,4 @@
 import mbHelper from 'mountebank-helper'
-import fetch from 'node-fetch'
 
 const imposter = new mbHelper.Imposter({
 	'imposterPort': 3000,
@@ -12,7 +11,7 @@ const USD = 73.75
 // todo rub, usd, eur, invalid, all
 
 const RUBXratesResponse = {
-	'uri': '/xrates/rub',
+	'uri': '/xrates/rub$',
 	'verb': 'GET',
 	'res': {
 		'statusCode': 200,
@@ -25,7 +24,7 @@ const RUBXratesResponse = {
 }
 
 const EURXratesResponse = {
-	'uri': '/xrates/eur',
+	'uri': '/xrates/eur$',
 	'verb': 'GET',
 	'res': {
 		'statusCode': 200,
@@ -38,7 +37,7 @@ const EURXratesResponse = {
 }
 
 const USDXratesResponse = {
-	'uri': '/xrates/usd',
+	'uri': '/xrates/usd$',
 	'verb': 'GET',
 	'res': {
 		'statusCode': 200,
@@ -51,7 +50,7 @@ const USDXratesResponse = {
 }
 
 const AllXratesResponse = {
-	'uri': '/xrates',
+	'uri': '/xrates$',
 	'verb': 'GET',
 	'res': {
 		'statusCode': 200,
@@ -84,6 +83,12 @@ mbHelper.startMbServer(2525)
 	.then(function () {
 		imposter.postToMountebank()
 			.then(() => {
-				console.log('Imposter Posted! Go to http://localhost:3000/xrates/rub, http://localhost:3000/xrates/aud')
+				console.log('Imposter Posted! Go to\n' +
+					'http://localhost:3000/xrates/rub,\n' +
+					'http://localhost:3000/xrates/eur,\n' +
+					'http://localhost:3000/xrates/usd,\n' +
+					'http://localhost:3000/xrates,\n' +
+					'http://localhost:3000/xrates/404\n'
+				)
 			})
 	})
